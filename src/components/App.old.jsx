@@ -18,14 +18,14 @@
   
 //   };
 
-  componentDidMount() { 
-    const savedContacts = localStorage.getItem('phone-contact');
-    if (savedContacts !== null) {
-      this.setState({
-        contacts: JSON.parse(savedContacts),
-      });
-    }
-  };
+  // componentDidMount() { 
+  //   const savedContacts = localStorage.getItem('phone-contact');
+  //   if (savedContacts !== null) {
+  //     this.setState({
+  //       contacts: JSON.parse(savedContacts),
+  //     });
+  //   }
+  // };
 
 //   componentDidUpdate(prevProps, prevState) {
 //     if (prevState.contacts !== this.state.contacts) {
