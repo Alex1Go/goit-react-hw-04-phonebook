@@ -11,7 +11,7 @@ const getLocalStorage = () => {
 };
 
 export const App = () => {
-  const [contacts, setContacts] = useState(getLocalStorage ());
+  const [contacts, setContacts] = useState(getLocalStorage);
   const [filter, setFilter] = useState('');
 
   
