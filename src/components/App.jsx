@@ -6,15 +6,12 @@ import { useEffect, useState } from "react";
 
 import css from './App.module.css';
 
-const getRealContacts = () => {
-  const savedContacts = localStorage.getItem('phone-contact');
-    if (savedContacts !== null) {
-      return JSON.parse(savedContacts);
-  }
-}
+const getLocalStorage = () => {
+  return JSON.parse(localStorage.getItem('phone-contact')) || [];
+};
 
 export const App = () => {
-  const [contacts, setContacts] = useState(() => getRealContacts());
+  const [contacts, setContacts] = useState(getLocalStorage ());
   const [filter, setFilter] = useState('');
 
   
