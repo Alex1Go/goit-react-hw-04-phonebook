@@ -14,7 +14,7 @@ const getRealContacts = () => {
 }
 
 export const App = () => {
-  const [contacts, setContacts] = useState(getRealContacts);
+  const [contacts, setContacts] = useState(() => getRealContacts());
   const [filter, setFilter] = useState('');
 
   
